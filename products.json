@@ -55,16 +55,16 @@
     "image": "iphone-16-black.png"
   },
   {
-    "id": "iphone-17-colors",
-    "brand": "Apple",
-    "model": "iPhone 17 Pro Max",
-    "color": "Colores disponibles",
-    "capacity": "Pregunta por capacidad",
-    "category": "iPhone",
-    "status": "Disponible",
-    "price": "Consultar",
-    "image": "iphone-17-pro.max-colors.png"
-  },
+  "id": "iphone-17-colors",
+  "brand": "Apple",
+  "model": "iPhone 17 Pro Max",
+  "color": "Colores disponibles",
+  "capacity": "Pregunta por capacidad",
+  "category": "iPhone",
+  "status": "Disponible",
+  "price": "Consultar",
+  "image": "iphone-17-pro-max-colors.png"
+},
   {
     "id": "iphone-16-pro-max",
     "brand": "Apple",
