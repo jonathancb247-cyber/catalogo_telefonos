@@ -1,0 +1,178 @@
+[
+  {
+    "id": "iphone-air",
+    "brand": "Apple",
+    "model": "iPhone Air",
+    "color": "Negro espacial",
+    "capacity": "Pregunta por capacidad",
+    "category": "iPhone",
+    "status": "Disponible",
+    "price": "Consultar",
+    "image": "iphone-air.png"
+  },
+  {
+    "id": "iphone-15-pro-max-natural",
+    "brand": "Apple",
+    "model": "iPhone 15 Pro Max",
+    "color": "Titanio natural",
+    "capacity": "Pregunta por capacidad",
+    "category": "iPhone",
+    "status": "Disponible",
+    "price": "Consultar",
+    "image": "iphone-15-pro-max-natural.png"
+  },
+  {
+    "id": "iphone-15-pro-max-blue",
+    "brand": "Apple",
+    "model": "iPhone 15 Pro Max",
+    "color": "Azul titanio",
+    "capacity": "Pregunta por capacidad",
+    "category": "iPhone",
+    "status": "Disponible",
+    "price": "Consultar",
+    "image": "iphone-15-pro-max-blue.png"
+  },
+  {
+    "id": "iphone-15-pro-max-black",
+    "brand": "Apple",
+    "model": "iPhone 15 Pro Max",
+    "color": "Negro titanio",
+    "capacity": "Pregunta por capacidad",
+    "category": "iPhone",
+    "status": "Disponible",
+    "price": "Consultar",
+    "image": "iphone-15-pro-max-black.png"
+  },
+  {
+    "id": "iphone-16-black",
+    "brand": "Apple",
+    "model": "iPhone 16",
+    "color": "Negro",
+    "capacity": "Pregunta por capacidad",
+    "category": "iPhone",
+    "status": "Disponible",
+    "price": "Consultar",
+    "image": "iphone-16-black.png"
+  },
+  {
+    "id": "iphone-16-colors",
+    "brand": "Apple",
+    "model": "iPhone 16",
+    "color": "Colores disponibles",
+    "capacity": "Pregunta por capacidad",
+    "category": "iPhone",
+    "status": "Disponible",
+    "price": "Consultar",
+    "image": "iphone-16-colors.png"
+  },
+  {
+    "id": "iphone-16-pro-max",
+    "brand": "Apple",
+    "model": "iPhone 16 Pro Max",
+    "color": "Titanio natural",
+    "capacity": "Pregunta por capacidad",
+    "category": "iPhone",
+    "status": "Disponible",
+    "price": "Consultar",
+    "image": "iphone-16-pro-max.png"
+  },
+  {
+    "id": "pixel-mint",
+    "brand": "Google",
+    "model": "Pixel 8",
+    "color": "Mint",
+    "capacity": "Pregunta por capacidad",
+    "category": "Android",
+    "status": "Disponible",
+    "price": "Consultar",
+    "image": "pixel-8-mint.png"
+  },
+  {
+    "id": "s25-ultra",
+    "brand": "Samsung",
+    "model": "Galaxy S25 Ultra",
+    "color": "Colores disponibles",
+    "capacity": "Pregunta por capacidad",
+    "category": "Android",
+    "status": "Disponible",
+    "price": "Consultar",
+    "image": "galaxy-s25-ultra.png"
+  },
+  {
+    "id": "fold7-black",
+    "brand": "Samsung",
+    "model": "Galaxy Z Fold7",
+    "color": "Negro",
+    "capacity": "Pregunta por capacidad",
+    "category": "Plegables",
+    "status": "Disponible",
+    "price": "Consultar",
+    "image": "galaxy-z-fold7-black.png"
+  },
+  {
+    "id": "fold7-silver",
+    "brand": "Samsung",
+    "model": "Galaxy Z Fold7",
+    "color": "Plata",
+    "capacity": "Pregunta por capacidad",
+    "category": "Plegables",
+    "status": "Disponible",
+    "price": "Consultar",
+    "image": "galaxy-z-fold7-silver.png"
+  },
+  {
+    "id": "oneplus-11",
+    "brand": "OnePlus",
+    "model": "OnePlus 11",
+    "color": "Edición Hasselblad",
+    "capacity": "Pregunta por capacidad",
+    "category": "Android",
+    "status": "Disponible",
+    "price": "Consultar",
+    "image": "oneplus-11.png"
+  },
+  {
+    "id": "watch8-classic",
+    "brand": "Samsung",
+    "model": "Galaxy Watch8 Classic",
+    "color": "Negro",
+    "capacity": "Smartwatch",
+    "category": "Wearables",
+    "status": "Disponible",
+    "price": "Consultar",
+    "image": "galaxy-watch8-classic.png"
+  },
+  {
+    "id": "watch-ultra",
+    "brand": "Samsung",
+    "model": "Galaxy Watch Ultra",
+    "color": "Negro",
+    "capacity": "Smartwatch",
+    "category": "Wearables",
+    "status": "Disponible",
+    "price": "Consultar",
+    "image": "galaxy-watch-ultra.png"
+  },
+  {
+    "id": "oura-ring-4",
+    "brand": "Oura",
+    "model": "Oura Ring 4",
+    "color": "Talla 8",
+    "capacity": "Anillo inteligente",
+    "category": "Wearables",
+    "status": "Disponible",
+    "price": "Consultar",
+    "image": "oura-ring-4.png"
+  },
+  {
+    "id": "rayban-headliner",
+    "brand": "Ray-Ban Meta",
+    "model": "Headliner",
+    "color": "Negro",
+    "capacity": "Smart glasses",
+    "category": "Wearables",
+    "status": "Disponible",
+    "price": "Consultar",
+    "image": "rayban-meta-headliner.png"
+  }
+]
