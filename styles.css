@@ -95,3 +95,18 @@ footer{background:#191713;color:#d8d0c5;padding:28px 0}
   .dialog-info{padding:38px 24px 28px}
   .dialog-info dl div{grid-template-columns:95px 1fr}
 }
+.whatsapp-product-button {
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: var(--ink);
+  color: white;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.whatsapp-product-button:disabled,
+#dialogWhatsapp[disabled] {
+  opacity: 0.65;
+  cursor: wait;
+}
