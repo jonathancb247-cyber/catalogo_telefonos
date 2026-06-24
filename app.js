@@ -378,4 +378,3 @@ fetch("products.json")
       </p>
     `;
   });
-```
