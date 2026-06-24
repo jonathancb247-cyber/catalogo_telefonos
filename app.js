@@ -1,4 +1,4 @@
-```js
+
 const CONFIG = {
   storeName: "Selección Premium",
   supabaseFunctionUrl:
