@@ -2,89 +2,380 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Catálogo interactivo de equipos premium">
-  <title>Selección Premium | Catálogo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Catálogo de equipos PhoneDepot. Consulta nuestros smartphones, tablets y smartwatches."
+  >
+
+  <title>PhoneDepot | Catálogo</title>
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header class="hero">
+
+  <!-- HEADER -->
+  <header class="hero" id="inicio">
+
     <nav class="nav shell">
-      <a class="brand" href="#inicio" aria-label="Inicio">
-        <span class="brand-mark">✦</span>
-        <span>Selección Premium</span>
+
+      <a class="brand" href="#inicio" aria-label="Inicio PhoneDepot">
+        <img
+          class="brand-logo"
+          src="assets/branding/logo-phonedepot.png"
+          alt="PhoneDepot"
+        >
       </a>
-      <a class="nav-whatsapp" id="topWhatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+
+      <div class="nav-actions">
+
+        <a
+          class="nav-location"
+          id="topGoogleMaps"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📍 Cómo llegar
+        </a>
+
+        <button
+          class="nav-whatsapp"
+          id="topWhatsapp"
+          type="button"
+        >
+          WhatsApp
+        </button>
+
+      </div>
+
     </nav>
 
-    <section id="inicio" class="hero-content shell">
-      <p class="eyebrow">EQUIPOS REVISADOS · CAJA ORIGINAL</p>
-      <h1>Encuentra tu próximo equipo.</h1>
-      <p class="hero-copy">Consulta disponibilidad, capacidad y precio directamente por WhatsApp.</p>
-      <a class="primary-button" href="#catalogo">Ver catálogo</a>
+
+    <!-- HERO -->
+    <section class="hero-content shell">
+
+      <div class="hero-overlay-content">
+
+        <p class="eyebrow">
+          PHONEDEPOT · CATÁLOGO DIGITAL
+        </p>
+
+        <h1>
+          Encuentra tu próximo equipo.
+        </h1>
+
+        <p class="hero-copy">
+          Explora nuestra selección de smartphones, tablets y smartwatches.
+          Consulta directamente con nuestro equipo de ventas por WhatsApp.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            class="primary-button"
+            href="#catalogo"
+          >
+            Explorar catálogo
+          </a>
+
+          <a
+            class="secondary-button"
+            id="heroGoogleMaps"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            📍 Visítanos
+          </a>
+
+        </div>
+
+      </div>
+
     </section>
+
   </header>
 
+
+  <!-- CATÁLOGO -->
   <main>
-    <section id="catalogo" class="catalog shell">
+
+    <section
+      id="catalogo"
+      class="catalog shell"
+    >
+
       <div class="catalog-heading">
+
         <div>
-          <p class="eyebrow dark">CATÁLOGO INTERACTIVO</p>
-          <h2>Selección disponible</h2>
+
+          <p class="eyebrow dark">
+            PHONEDEPOT
+          </p>
+
+          <h2>
+            Nuestra selección
+          </h2>
+
+          <p class="section-description">
+            Encuentra el equipo que estás buscando y consulta su disponibilidad
+            directamente con nuestros vendedores.
+          </p>
+
         </div>
-        <p id="resultCount" class="result-count"></p>
+
+        <p
+          id="resultCount"
+          class="result-count"
+        ></p>
+
       </div>
 
+
+      <!-- BUSCADOR -->
       <div class="toolbar">
+
         <label class="search-box">
+
           <span>⌕</span>
-          <input id="searchInput" type="search" placeholder="Buscar iPhone, Samsung, Pixel..." autocomplete="off">
+
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Buscar iPhone, Samsung, Pixel..."
+            autocomplete="off"
+          >
+
         </label>
-        <select id="statusFilter" aria-label="Filtrar por disponibilidad">
-          <option value="Todos">Todos los estados</option>
-          <option value="Disponible">Disponible</option>
-          <option value="Apartado">Apartado</option>
-          <option value="Vendido">Vendido</option>
-        </select>
+
       </div>
 
-      <div id="categoryFilters" class="chips" aria-label="Categorías"></div>
-      <div id="productGrid" class="product-grid"></div>
 
-      <div id="emptyState" class="empty-state" hidden>
-        <h3>No encontramos equipos</h3>
-        <p>Prueba con otro término o elimina los filtros.</p>
+      <!-- CATEGORÍAS -->
+      <div class="brand-filter-shell">
+
+        <button
+          class="brand-scroll-button brand-scroll-left"
+          type="button"
+          aria-label="Desplazar marcas a la izquierda"
+          hidden
+        >
+          ‹
+        </button>
+
+        <div
+          id="categoryFilters"
+          class="brand-filters"
+          aria-label="Marcas"
+        ></div>
+
+        <button
+          class="brand-scroll-button brand-scroll-right"
+          type="button"
+          aria-label="Desplazar marcas a la derecha"
+          hidden
+        >
+          ›
+        </button>
+
       </div>
+
+
+      <!-- PRODUCTOS -->
+      <div
+        id="productGrid"
+        class="product-grid"
+      ></div>
+
+
+      <!-- SIN RESULTADOS -->
+      <div
+        id="emptyState"
+        class="empty-state"
+        hidden
+      >
+
+        <h3>
+          No encontramos equipos
+        </h3>
+
+        <p>
+          Prueba con otro término de búsqueda o selecciona otra categoría.
+        </p>
+
+      </div>
+
     </section>
+
   </main>
 
-  <button id="floatingWhatsapp" class="floating-whatsapp" aria-label="Abrir WhatsApp">WhatsApp</button>
 
-  <dialog id="productDialog" class="product-dialog">
-    <button id="closeDialog" class="dialog-close" aria-label="Cerrar">×</button>
+  <!-- WHATSAPP FLOTANTE -->
+  <button
+    id="floatingWhatsapp"
+    class="floating-whatsapp"
+    type="button"
+    aria-label="Contactar por WhatsApp"
+  >
+    WhatsApp
+  </button>
+
+
+  <!-- MODAL PRODUCTO -->
+  <dialog
+    id="productDialog"
+    class="product-dialog"
+  >
+
+    <button
+      id="closeDialog"
+      class="dialog-close"
+      type="button"
+      aria-label="Cerrar"
+    >
+      ×
+    </button>
+
+
     <div class="dialog-layout">
-      <img id="dialogImage" src="" alt="">
-      <div class="dialog-info">
-        <p id="dialogBrand" class="eyebrow dark"></p>
-        <h2 id="dialogModel"></h2>
-        <dl>
-          <div><dt>Color</dt><dd id="dialogColor"></dd></div>
-          <div><dt>Capacidad</dt><dd id="dialogCapacity"></dd></div>
-          <div><dt>Estado</dt><dd id="dialogStatus"></dd></div>
-          <div><dt>Precio</dt><dd id="dialogPrice"></dd></div>
-        </dl>
-        <a id="dialogWhatsapp" class="primary-button wide" href="#" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+
+      <div class="dialog-image-wrap">
+
+        <div class="dialog-gallery">
+
+          <img
+            id="dialogImage"
+            src=""
+            alt=""
+            decoding="async"
+          >
+
+          <div
+            id="dialogThumbnails"
+            class="dialog-thumbnails"
+          ></div>
+
+        </div>
+
       </div>
+
+
+      <div class="dialog-info">
+
+        <p
+          id="dialogBrand"
+          class="eyebrow dark"
+        ></p>
+
+        <h2
+          id="dialogModel"
+        ></h2>
+
+
+        <dl>
+
+          <div>
+            <dt>Capacidad</dt>
+            <dd id="dialogCapacity"></dd>
+          </div>
+
+          <div>
+            <dt>Precio</dt>
+            <dd id="dialogPrice"></dd>
+          </div>
+
+        </dl>
+
+        <ul class="product-summary">
+
+          <li>Colores disponibles</li>
+          <li>Capacidades disponibles</li>
+          <li>Disponibilidad sujeta a confirmación</li>
+
+        </ul>
+
+        <div class="dialog-actions">
+
+          <button
+            id="dialogWhatsapp"
+            class="primary-button wide"
+            type="button"
+          >
+            Consultar disponibilidad
+          </button>
+
+          <a
+            id="dialogGoogleMaps"
+            class="secondary-location-button wide"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Cómo llegar
+          </a>
+
+        </div>
+
+      </div>
+
     </div>
+
   </dialog>
 
+
+  <!-- FOOTER -->
   <footer>
+
     <div class="shell footer-inner">
-      <p>✦ Selección Premium</p>
-      <p>Precios y disponibilidad sujetos a confirmación.</p>
+
+      <div>
+
+        <img
+          class="footer-logo"
+          src="assets/branding/logo-phonedepot.png"
+          alt="PhoneDepot"
+        >
+
+        <p>
+          Tu próximo equipo está en PhoneDepot.
+        </p>
+
+      </div>
+
+
+      <div class="footer-actions">
+
+        <a
+          id="footerGoogleMaps"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📍 Visítanos en Google Maps
+        </a>
+
+        <button
+          id="footerWhatsapp"
+          type="button"
+        >
+          Contactar por WhatsApp
+        </button>
+
+      </div>
+
     </div>
+
+    <p class="footer-credit">
+      © PhoneDepot · Selección Premium
+    </p>
+
   </footer>
 
-  <script src="app.js?v=9"></script>
+
+  <script src="app.js"></script>
+
 </body>
 </html>

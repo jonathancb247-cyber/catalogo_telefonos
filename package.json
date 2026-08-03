@@ -1,0 +1,7 @@
+{
+  "name": "catalogo-phonedepot",
+  "private": true,
+  "scripts": {
+    "generate-catalog": "node generate-catalog.js"
+  }
+}
