@@ -17,6 +17,8 @@ const CONFIG = {
 
 };
 
+const APP_VERSION = "2026.08.02.1";
+
 
 // ============================================
 // ESTADO
@@ -35,11 +37,11 @@ let preloadedSeller = null;
 let sellerPreloadPromise = null;
 
 const BRAND_LOGOS = {
-  Apple: "assets/branding/brands/apple.svg",
-  Samsung: "assets/branding/brands/samsung.svg",
-  Google: "assets/branding/brands/google.svg",
-  Motorola: "assets/branding/brands/motorola.svg",
-  OnePlus: "assets/branding/brands/oneplus.svg"
+  Apple: `assets/branding/brands/apple.svg?v=${APP_VERSION}`,
+  Samsung: `assets/branding/brands/samsung.svg?v=${APP_VERSION}`,
+  Google: `assets/branding/brands/google.svg?v=${APP_VERSION}`,
+  Motorola: `assets/branding/brands/motorola.svg?v=${APP_VERSION}`,
+  OnePlus: `assets/branding/brands/oneplus.svg?v=${APP_VERSION}`
 };
 
 const DEV_FORCE_CHRISTMAS_GALLERY =
@@ -2256,7 +2258,12 @@ preloadSeller();
 // CARGAR CATÁLOGO
 // ============================================
 
-fetch("products.json")
+fetch(
+  `products.json?v=${encodeURIComponent(APP_VERSION)}`,
+  {
+    cache: "no-store"
+  }
+)
 
   .then(response => {
 
